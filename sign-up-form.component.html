@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6 ">
+        <form>
+            <div class="form-group">
+                <label for="organizationName" ></label>
+                <input type="text" placeholder="Enter User Name" id="UserName" name="user_name" [(ngModel)]="signUpFormData.user_name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email" ></label>
+                <input type="text" placeholder="Enter Email" id="userEmail" name="email" [(ngModel)]="signUpFormData.email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password"></label>
+                <input type="text" placeholder="Enter Password" id="password" name="pass" [(ngModel)]="signUpFormData.pass" class="form-control">
+            </div>
+            <button class="btn btn-primary" (click)="goToMailCredentials()">Submit</button>
+        
+        </form>
+        </div>
+    </div>
+        
+</div>
